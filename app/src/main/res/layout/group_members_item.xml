@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/createTV"
+        android:id="@+id/creator_block"
+        android:padding="8dp"
+        android:clickable="true"
+        android:background="?attr/selectableItemBackground"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_man"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:id="@+id/creator_ava"
+
+            />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/creator_ava"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/creator_name"
+                android:textColor="#212121"
+                android:text="Василий Петров"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/creator_number"
+                android:layout_marginTop="8dp"
+                android:text="+3000.4623958"
+                android:layout_below="@+id/creator_name"/>
+
+        </RelativeLayout>
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_delete_black_24dp"
+            android:id="@+id/delete_contact_btn"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_toLeftOf="@+id/delete_contact_btn"
+            android:layout_centerVertical="true"
+            android:background="?selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_add_black_24dp"
+            android:id="@+id/add_to_friend_btn"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

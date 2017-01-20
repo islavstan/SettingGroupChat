@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#FFFFFF"
+        android:elevation="8dp"
+        android:id="@+id/block1"
+        android:layout_marginBottom="8dp"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="64dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="16dp"
+            android:id="@+id/group_photo"
+            android:src="@drawable/ic_team"
+            android:layout_height="64dp" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/edit_name_block"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/group_photo"
+            android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:id="@+id/nameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="Название"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#727272"/>
+
+            <EditText
+                android:layout_below="@+id/nameTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:id="@+id/edit_name"
+              android:hint="введите название группы"
+                android:textSize="16sp"
+                />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#FFFFFF"
+        android:elevation="8dp"
+        android:id="@+id/block2"
+        android:layout_below="@+id/block1"
+        android:layout_marginBottom="8dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_margin="16dp"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/notificationTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Уведомления"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#727272"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:id="@+id/sound_block1"
+                android:layout_below="@+id/notificationTV"
+                android:background="?attr/selectableItemBackground">
+
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Звук"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="#212121"/>
+                <Switch
+                    android:id="@+id/coming_message1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+
+                    android:background="?selectableItemBackgroundBorderless"
+
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_below="@+id/sound_block1"
+                android:background="?attr/selectableItemBackground">
+
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Уведомления"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="#212121"/>
+                <Switch
+                    android:id="@+id/coming_message2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+
+                    android:background="?selectableItemBackgroundBorderless"
+
+                    />
+            </RelativeLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/add_to_group_block"
+        android:layout_below="@+id/block2"
+        android:elevation="8dp"
+        android:background="#FFFFFF"
+        android:layout_marginBottom="8dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/controlTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Управление"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="#727272"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Добавить участника в группу"
+            android:padding="16dp"
+            android:layout_below="@+id/controlTV"
+            android:id="@+id/add_to_group_btn"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#212121"
+            android:layout_height="wrap_content" />
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:text="Выйти из группы"
+    android:padding="16dp"
+    android:clickable="true"
+    android:layout_below="@+id/add_to_group_btn"
+    android:background="?attr/selectableItemBackground"
+    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+    android:textColor="#212121"
+    />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#FFFFFF"
+        android:elevation="8dp"
+        android:id="@+id/block3"
+        android:layout_below="@+id/add_to_group_block"
+        android:layout_marginBottom="8dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/create_block"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/createTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Создатель группы"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="8dp"
+
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="#727272"/>
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_below="@+id/createTV"
+                   android:id="@+id/creator_block"
+                   android:padding="8dp"
+                   android:clickable="true"
+                   android:background="?attr/selectableItemBackground"
+                   android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_man"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:id="@+id/creator_ava"
+
+              />
+                   <RelativeLayout
+                       android:layout_width="wrap_content"
+                       android:layout_centerVertical="true"
+                       android:layout_toRightOf="@+id/creator_ava"
+                       android:layout_height="wrap_content">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:id="@+id/creator_name"
+                           android:textColor="#212121"
+                           android:text="Василий Петров"/>
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:id="@+id/creator_number"
+                           android:layout_marginTop="8dp"
+                           android:text="+3000.4623958"
+                           android:layout_below="@+id/creator_name"/>
+
+                   </RelativeLayout>
+
+               </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/contactsTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Участники группы"
+           android:layout_marginTop="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_below="@+id/create_block"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="#727272"/>
+
+
+
+        <android.support.v7.widget.SearchView
+            android:layout_width="match_parent"
+            app:queryHint="введите имя участника"
+            android:id="@+id/search_view"
+            android:layout_below="@+id/contactsTV"
+            android:layout_height="wrap_content"/>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/recycler"
+            android:layout_below="@+id/search_view"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+    </RelativeLayout>
+</ScrollView>
